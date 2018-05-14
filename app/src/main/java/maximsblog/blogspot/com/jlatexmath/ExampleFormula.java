@@ -72,11 +72,15 @@ public class ExampleFormula {
 	+ "\\fbox{\\text{A framed box with \\textdbend}}&\\shadowbox{\\text{A shadowed box}}\\cr"
 	+ "\\doublebox{\\text{A double framed box}}&\\ovalbox{\\text{An oval framed box}}\\cr"
 	+ "\\end{array}";
-	
+
 	private static String mExample7 = "\\mbox{abc abc abc abc abc abc abc abc abc abc abc abc abc abc\\\\abc abc abc abc abc abc abc\\\\abc abc abc abc abc abc abc}\\\\1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1+1";
-	
-	private static String[] mFormulaArray = new String[] {"About", mExample1,mExample2,mExample3,mExample4,mExample5,mExample6,mExample7};
-	
+
+	private static String simpleMathEquation = 	"1+1=2";
+
+	//private static String[] mFormulaArray = new String[] {"About", mExample1,mExample2,mExample3,mExample4,mExample5,mExample6,mExample7};
+	private static String[] mFormulaArray = new String[] {"About", simpleMathEquation};
+
+
 	public static String[] getFormulaArray(){
 		return mFormulaArray;
 	}
