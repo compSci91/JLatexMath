@@ -21,6 +21,7 @@ import android.os.Environment;
 import android.support.v4.app.Fragment;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
@@ -82,6 +83,22 @@ public class ExampleFragment extends Fragment implements OnClickListener {
 		mSizeText = (EditText) layout.findViewById(R.id.size);
 		layout.findViewById(R.id.set_textsize).setOnClickListener(this);
 		setformula();
+
+		layout.setOnTouchListener(new View.OnTouchListener() {
+			public boolean onTouch(View v, MotionEvent event) {
+
+				float x = event.getX();
+				float y = event.getY();
+
+				System.out.println("Touch Location: (" + x + ", " + y + ")");
+
+//				if(event.getAction() == MotionEvent.ACTION_MOVE){
+//					//do something
+//				}
+				return true;
+			}
+		});
+
 
 		return layout;
 	}
